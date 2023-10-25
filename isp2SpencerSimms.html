@@ -17,133 +17,100 @@
                 <td>Name</td>
                 <td>Add your name</td>
                 <td>
-                    <button>Enter Name</button>
+                    <button onclick="addName()">Enter Name</button>
                 </td>
             </tr>
             <tr>
                 <td>Picture</td>
                 <td>Add your picture</td>
                 <td>
-                    <button>Picture</button>
+                    <input type="file" id="userPic">
+                    <button onclick=importPic()>Submit</button>
                 </td>
             </tr>
             <tr>
                 <td>Phone Number</td>
                 <td>Add your phone number</td>
                 <td>
-                    <button>Number</button>
-                </tr>
+                    <button onclick=addNumber()>Number</button>
+                </td>
             </tr>
             <tr>
                 <td>Email</td>
                 <td>Add your email</td>
                 <td>
-                    <button>Email</button>
+                    <button onclick=addEmail()>Email</button>
                 </td>
             </tr>
             <tr>
                 <td>Address</td>
                 <td>Add your address</td>
                 <td>
-                    <button>Address</button>
+                    <button onclick=addAddress()>Address</button>
                 </td>
             </tr>
             <tr>
                 <td>GitHub</td>
                 <td>Add a link to your GitHub</td>
                 <td>
-                    <button>GitHub</button>
+                    <label for="GitHub">GitHub:</label>
+                    <input type="url" id="GitHub">
+                    <button onclick=addGitHub()>Submit</button>
                 </td>
             </tr>
             <tr>
                 <td>LinkedIn</td>
                 <td>Add a link to your LinkedIn</td>
                 <td>
-                    <button>LinkedIn</button>
-                </td>
-            </tr>
-            <tr>
-                <td>Links</td>
-                <td>Add any other links</td>
-                <td>
-                    <button>Link</button>
+                    <label for="LinkedIn">LinkedIn:</label>
+                    <input type="url" id="LinkedIn">
+                    <button onclick=addLinkedIn()>Submit</button>
                 </td>
             </tr>
             <tr>
                 <td>Work Experience</td>
                 <td>Add your previous work experience</td>
                 <td>
-                    <button>Work Experience</button>
+                    <button onclick="new workExp">Work Experience</button>
                 </td>
             </tr>
             <tr>
                 <td>Projects</td>
                 <td>Add your projects</td>
                 <td>
-                    <button>Project</button>
+                    <button onclick="new project">Project</button>
                 </td>
             </tr>
             <tr>
                 <td>Project Video</td>
                 <td>Add a video of your project</td>
                 <td>
-                    <button>Project Video</button>
+                    <input type="file" id="projVid">
+                    <button onclick=importVid()>Submit</button>
                 </td>
             </tr>
             <tr>
                 <td>Education</td>
                 <td>Add education history</td>
                 <td>
-                    <button>Education</button>
+                    <button onclick="new education">Education</button>
                 </td>
             </tr>
             <tr>
                 <td>Skills</td>
                 <td>Add your skills</td>
                 <td>
-                    <button>Skill</button>
+                    <button onclick="new skill">Skill</button>
                 </td>
             </tr>
             <tr>
                 <td>Extracurriculars</td>
                 <td>Add your extracurriculars</td>
                 <td>
-                    <button>Extracurricular</button>
-                </td>
-            </tr>
-            <tr>
-                <td>Additional Category</td>
-                <td>Add additional categories and elements</td>
-                <td>
-                    <button>Category</button>
-                </td>
-            </tr>
-            <tr>
-                <th>Edit Theme</th>
-                <th>Description</th>
-                <th>Action</th>
-            </tr>
-            <tr>
-                <td>Background Color</td>
-                <td>Change the background color</td>
-                <td>
-                    <button>Background Color</button>
-                </td>
-            </tr>
-            <tr>
-                <td>Text Color</td>
-                <td>Change the text color</td>
-                <td>
-                    <button>Text Color</button>
-                </td>
-            </tr>
-            <tr>
-                <td>Font</td>
-                <td>Change the font</td>
-                <td>
-                    <button>Font</button>
+                    <button onclick="new extracurricular">Extracurricular</button>
                 </td>
             </tr>
         </table>
+        <button onclick=openWin()>Open Window</button>
     </body>
 </html>
